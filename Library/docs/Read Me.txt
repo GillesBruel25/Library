@@ -1,0 +1,24 @@
+---------------------------------------------------------------
+         Read Me - My Library
+---------------------------------------------------------------
+
+Copyright - SIGNE MBE FRANCKLIN
+
+Pour utiliser l'application My Library, il faut être un admin pour pouvoir se connecter.
+Le compte par default est: Name (Gilles) et Password (1234).
+
+Une fois connecté, le menu est présent à gauche et comporte 3 onglets
+
+- List all Book
+   Qui resence tous les livres présents dans la bibliothèque et donne aussi la possibilité d'effectuer Une 
+   recherche(fonction du titre) d'un livre dans l'ensemble de la bibliothèque.
+
+- Modify Book
+   Qui contient 03 sous parties, permettant respectivement d'ajouter un nouveau bouquain,
+    de modifier les élements d'un bouquain dejà présent et dernièrement d'en supprimer.
+
+- Log out
+   Permettra à l'admin de se deconnecter.
+
+***************************************************************
+Merci de laisser des commentaires sur mon application et de respecter les consignes indiqués plus haut

@@ -1,0 +1,157 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Gestion du menu */
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: radial-gradient( #2196f3, #212121);
+    padding: 5% 0 0 0;
+    width: 22%;
+    height: 100%;
+    border-right: 1px solid black;
+    box-shadow: 1px 1px 5px black;
+}
+.menu .top, .menu .bottom{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu .top h1{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: consolas;
+    margin: 2% 0 0 0;
+}
+.menu .top h4{
+    margin-top: 1%;
+    margin-bottom: 5%;
+    color: #212121;
+}
+.menu .bottom div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: cambria;
+    margin-top: 5%;
+    cursor: pointer;
+}
+.menu .bottom div img{
+    width: 34px;
+    height: 34px;
+}
+
+/* Gestion du contenu (.content)*/
+
+.content{
+    margin-left: 22%;
+    padding-top: 5%;
+    width: 78%;
+}
+.content .search_bar form{
+    width: 100%;
+    margin-left: -5%;
+    display: flex;
+    justify-content: center;
+}
+.content .search_bar form .input{
+    width: 60%;
+    height: 50px;
+    color: #212121;
+}
+.content .search_bar form .button{
+    width: 10%;
+}
+.content .list{
+    margin-top: 5%;
+    padding-left: 10%;
+}
+.content .list .book{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 1% 0 1% 0;
+    font-size: 15px;
+}
+.content .list .book img{
+    width: 34px;
+    height: 34px;
+}
+.content .list .book .top{
+    color: #10a069;
+    font-size: 11px;
+}
+.content .list .book .title{
+    width: 50%;
+}
+.content .list .book .qty{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2196f3;
+    color: white;
+}
+
+/* Gestion de la page Modify book */
+
+#content{
+    padding-top: 5%;
+}
+.content #list{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 50px;
+    margin-top: 0;
+    padding-left: 5%;
+}
+.content .list fieldset{
+    width: 80%;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    font-family: cambria;
+    text-shadow: 1px 1px 1px black;
+}
+.content .list fieldset legend{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-family: papyrus;
+    color: rgb(158, 50, 172);
+}
+.content .list fieldset form{
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-areas: auto;
+}
+.content .list #add_box{
+    border-color: rgb(4, 233, 4);
+    box-shadow: 1px 1px 3px green;
+    background: rgba(3, 179, 3, 0.692);
+}
+.content .list #modify_box{
+    border-color: rgb(255, 153, 0);
+    box-shadow: 1px 1px 3px orange;
+    background: rgba(255, 166, 0, 0.753);
+}
+.content .list #delete_box{
+    border-color: red;
+    box-shadow: 1px 1px 3px red;
+    background: rgba(255, 0, 0, 0.726);
+}
+.content .list fieldset form input{
+    height: 25px;
+}

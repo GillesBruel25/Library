@@ -1,0 +1,266 @@
+
+/* Gestion du document html */
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+/* Gestion du header */
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 1%;
+    box-sizing: border-box;
+    background: #03a9f4;
+    height: 280px;
+}
+header img{
+    margin: 0 0 -4% 0;
+}
+header h1{
+    width: 100%;
+    text-align: center;
+    margin: 0 0 1% 0;
+    padding-top: 0;
+    padding-left: 5px;
+    display: block;
+    color: white;
+    font-family: consolas;
+}
+
+/* Gestion du button dropdown */
+
+.dropdown{
+    position: absolute;
+    z-index: 3;
+    top: 260px;
+    left: 48.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #2196f3;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: white;
+}
+.dropdown img{
+    width: 27px;
+    height: 27px;
+}
+
+/* Gestion du div .functionnality */
+
+.functionnality{
+    display: flex;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+}
+.functionnality .box1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border: 2px solid white;
+    border-left: none;
+    background: #673ab7;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.functionnality .box2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border: 2px solid white;
+    border-right: none;
+    background: #3f51b5;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.functionnality h3{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding-top: 0;
+    display: block;
+    color: white;
+    font-family: consolas;
+}
+.functionnality section:hover{
+    filter: brightness(.8);
+}
+.functionnality section img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    padding: 5px;
+    margin-bottom: -5%;
+}
+
+
+/* Gestion du div .start_div */
+
+.start_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 210px;
+    background: url(../img/books-1281581_1920.jpg);
+    background-size: 100% auto;
+    background-attachment: fixed;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+.start_div span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9%;
+    height: 40px;
+    border: 1px solid white;
+    transition: all .3s ease-out;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: cambria;
+    cursor: pointer;
+}
+.start_div span:hover{
+    background: #673ab7;
+    border: 1px solid #673ab7;
+}
+/* Gestion du formulaire de sign in*/
+.cover{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000009d;
+}
+.cover > img{
+    z-index: 5;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+}
+.cover fieldset{
+    width: 37%;
+    height: 40%;
+    border-color: aliceblue;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 5px rgb(148, 148, 148);
+    background: #ffffff8a;
+    transition: all .3s ease-out;
+}
+.cover fieldset legend{
+    color: white;
+    font-size: 18px;
+    font-family: papyrus;
+    padding: 0 10px 10px 5px;
+}
+.cover fieldset form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cover fieldset form label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 1% 0 2% 0;
+    color: white;
+    font-size: 17px;
+    font-family: magneto;
+}
+.cover fieldset label input{
+    width: 70%;
+    height: 30px;
+    font-size: 16px;
+}
+.cover fieldset .button{
+    justify-content: center;
+}
+.cover fieldset label input[type='submit']{
+    background: #673ab7;
+    color: white;
+    font-size: 18px;
+    width: 50%;
+}
+
+/* Gestion du footer */
+
+footer{
+    display: flex;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+}
+footer section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    border: 2px solid white;
+    border-left: none;
+    background: #673ab7;
+    color: white;
+}
+
+
+/* Responsive design */
+
+@media screen and (max-width: 700px){
+    .dropdown{
+        left: 46%;
+    }
+
+    .start_div span{
+        width: 15%;
+    }
+    .cover fieldset{
+        width: 75%;
+    }
+
+    footer{
+        flex-wrap: wrap;
+    }
+    footer section{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 950px){
+    .dropdown{
+        left: 47%;
+    }
+    .cover fieldset{
+        width: 57%;
+    }
+}
